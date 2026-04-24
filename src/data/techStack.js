@@ -1,0 +1,17 @@
+export const techStack = [
+  'Kotlin',
+  'Jetpack Compose',
+  'Flutter',
+  'Dart',
+  'Firebase',
+  'Room DB',
+  'PostgreSQL',
+  'BLoC',
+  'MVVM',
+  'Clean Architecture',
+  'REST APIs',
+  'Android Studio',
+  'Git & GitHub',
+  'Coroutines',
+  'Hilt/Dagger',
+];

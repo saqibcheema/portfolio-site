@@ -1,0 +1,24 @@
+#cursor-dot {
+  position: fixed; top: 0; left: 0; z-index: 9999;
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--accent);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s, background 0.3s;
+}
+#cursor-ring {
+  position: fixed; top: 0; left: 0; z-index: 9998;
+  width: 36px; height: 36px; border-radius: 50%;
+  border: 1.5px solid var(--accent);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s, border-color 0.3s;
+  opacity: 0.6;
+}
+
+.cursor-grow #cursor-ring { width: 56px; height: 56px; opacity: 0.4; }
+.cursor-grow #cursor-dot { transform: translate(-50%, -50%) scale(1.5); }
+
+@media (max-width: 900px) {
+  #cursor-dot, #cursor-ring { display: none; }
+}

@@ -1,0 +1,89 @@
+.testimonials { background: var(--bg); }
+.testimonials-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 64px;
+  align-items: end;
+}
+.testi-stats { display: flex; gap: 40px; align-items: flex-start; }
+.testi-stat .num {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1;
+}
+.testi-stat .label { color: var(--text-muted); font-size: 0.85rem; margin-top: 4px; }
+.testi-note {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  max-width: 280px;
+  margin-top: 8px;
+  font-style: italic;
+}
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.testi-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 36px;
+  cursor: none;
+}
+.testi-card.featured {
+  grid-column: 1 / -1;
+  background: var(--bg3);
+  border-color: rgba(255,255,255,0.1);
+}
+.testi-quote {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--text);
+  margin-bottom: 28px;
+  position: relative;
+}
+.testi-quote::before {
+  content: '"';
+  font-family: var(--font-display);
+  font-size: 4rem;
+  line-height: 0.5;
+  color: var(--accent);
+  opacity: 0.4;
+  display: block;
+  margin-bottom: 12px;
+}
+.testi-author { display: flex; align-items: center; gap: 14px; }
+.testi-avatar {
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 0.85rem;
+  color: var(--accent);
+  font-family: var(--font-display);
+  flex-shrink: 0;
+}
+.testi-name { font-weight: 600; font-size: 0.95rem; }
+.testi-role { font-size: 0.8rem; color: var(--text-muted); margin-top: 2px; }
+.testi-stars { color: var(--accent); font-size: 0.8rem; margin-bottom: 4px; }
+.testi-placeholder-note {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  margin-top: 24px;
+  font-style: italic;
+  opacity: 0.6;
+}
+
+@media (max-width: 900px) {
+  .testimonials-header { grid-template-columns: 1fr; gap: 32px; }
+  .testimonials-grid { grid-template-columns: 1fr; }
+  .testi-card.featured { grid-column: auto; }
+}
