@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import CustomCursor from './components/layout/CustomCursor';
+import Navbar from './components/layout/Navbar';
+import Footer from './components/layout/Footer';
+import Hero from './components/sections/Hero';
+import Services from './components/sections/Services';
+import TechStrip from './components/sections/TechStrip';
+import About from './components/sections/About';
+import Projects from './components/sections/Projects';
+import FAQ from './components/sections/FAQ';
+import Contact from './components/sections/Contact';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <CustomCursor />
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Services />
+        <TechStrip />
+        <Projects />
+        <FAQ />
+        <Contact />
+      </main>
+      <Footer />
+    </>
   );
 }
 

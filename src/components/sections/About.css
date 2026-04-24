@@ -1,0 +1,84 @@
+.about { background: var(--bg); }
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.about-text {
+  margin-bottom: 32px;
+}
+.about-text-content {
+  position: relative;
+  padding-left: 20px;
+  border-left: 2px solid var(--accent);
+}
+.about-text-content p {
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  line-height: 1.85;
+  font-size: 1.05rem;
+}
+.about-text-content p:last-child { margin-bottom: 0; }
+.about-text-content p strong { color: var(--text); font-weight: 500; }
+.about-links {
+  display: flex; gap: 12px; margin-top: 32px; flex-wrap: wrap;
+}
+.about-link {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 20px;
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: border-color 0.25s, color 0.25s;
+}
+.about-link:hover { border-color: var(--accent); color: var(--accent); }
+.email-tooltip-container { position: relative; display: inline-flex; }
+.email-tooltip {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+  background-color: var(--border, #333);
+  color: var(--text, #fff);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+  pointer-events: none;
+  z-index: 10;
+}
+.email-tooltip-container:hover .email-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.about-stats { display: flex; flex-direction: column; gap: 0; align-self: center; }
+.stat-row {
+  display: flex; align-items: center; gap: 28px;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--border);
+}
+.stat-row:first-child { border-top: 1px solid var(--border); }
+.stat-num {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--accent);
+  min-width: 100px;
+  line-height: 1;
+}
+.stat-label { color: var(--text-muted); font-size: 0.95rem; }
+.stat-sub { font-size: 0.8rem; color: var(--text-muted); opacity: 0.6; margin-top: 4px; }
+
+@media (max-width: 1024px) {
+  .about-grid { grid-template-columns: 1fr; gap: 64px; }
+}
+@media (max-width: 768px) {
+  .about-grid { gap: 48px; }
+}
