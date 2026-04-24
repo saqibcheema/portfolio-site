@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Saqib Ali - Personal Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive, and highly interactive personal portfolio website showcasing my skills, projects, and experience as a Mobile Engineer. Built from scratch with React and Framer Motion.
 
-## Available Scripts
+## 🚀 Live Demo
 
-In the project directory, you can run:
+*(Add your live deployed URL here, e.g. Vercel, Netlify, or GitHub Pages)*
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Modern UI/UX:** Clean, dark-themed, glassmorphism design with responsive layouts.
+- **Smooth Animations:** Advanced scroll-reveal and interaction animations using Framer Motion.
+- **Custom Cursor:** Unique custom cursor for enhanced desktop experience.
+- **Dynamic Projects:** Project showcase supporting different aspect-ratio images and tags.
+- **Functional Contact Form:** Seamless contact experience integrated with Web3Forms API.
+- **Mobile First:** Fully optimized for mobile, tablet, and desktop devices.
+- **Offline-First Ideology:** Follows best architecture practices as applied in my native Android/Flutter apps.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+- **React SDK:** React 18
+- **Core:** JavaScript, HTML, CSS3
+- **Animations:** Framer Motion
+- **Form Handling:** Web3Forms API
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 💻 Getting Started
 
-### `npm run build`
+Follow these steps to run the project locally on your machine.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js (v14 or higher)
+- npm or yarn
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/saqibcheema/portfolio-site.git
+   cd portfolio-site
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Configure Environment Variables:**
+   Create a `.env` file in the root directory and add your Web3Forms Access Key to enable the contact form:
+   ```env
+   REACT_APP_WEB3FORMS_ACCESS_KEY=your_access_key_here
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Start the development server:**
+   ```bash
+   npm start
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+5. **Open in Browser:**
+   Visit `http://localhost:3000` to view the application in your browser.
 
-## Learn More
+## 💼 Included Sections
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Hero:** Impactful introduction and dynamic text.
+- **About:** Personal introduction, tech stack stats, and focus on architecture.
+- **Projects:** Selected showcase of real-world apps (e.g. VisionDiet Tracker, Anonymous Chat App).
+- **Services:** Breakdown of services provided (Native Android, Flutter, Firebase scaling, etc.).
+- **Tech Stack:** Infinite sliding tech strip ribbon.
+- **FAQ:** Frequently asked questions with smooth accordions.
+- **Contact:** Secure, animated form with direct messaging integration.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 👨‍💻 Author
 
-### Code Splitting
+**Saqib Ali**
+- **GitHub:** [@saqibcheema](https://github.com/saqibcheema)
+- **LinkedIn:** [Saqib Cheema](https://www.linkedin.com/in/saqib-cheema/)
+- **Email:** saqibyu961@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+*Feel free to star ⭐ this repository if you found it helpful!*
